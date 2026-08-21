@@ -1,0 +1,12 @@
+# --- Archivos de Python ---
+__pycache__/
+*.pyc
+
+# --- Archivos de PyInstaller (Lo que genera el .exe) ---
+build/
+dist/
+*.spec
+
+# --- Archivos del Sistema / Temporales ---
+.DS_Store
+Thumbs.db
