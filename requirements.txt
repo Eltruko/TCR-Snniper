@@ -1,0 +1,6 @@
+ejecuta este comando en la terminal despues de borrarlo de aqui
+pip install -r requirements.txt
+customtkinter
+Pillow
+pytesseract
+pyperclip
