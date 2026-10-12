@@ -16,7 +16,7 @@ def get_resource_path(relative_path):
         base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, relative_path)
 
-# --- 2. CONFIGURACIÓN INTELIGENTE DE TESSERACT (Ideal para GitHub) ---
+
 # Busca el ejecutable en la ruta local del proyecto o en la instalación global de Windows
 base_dir = get_resource_path('')
 exe_local = os.path.join(base_dir, 'Tesseract-OCR', 'tesseract.exe')
@@ -86,7 +86,7 @@ class AppOCR(ctk.CTk):
         self.title("OCR Sniper")
         self.geometry("700x500") 
         
-        # Tema Oscuro Personalizado
+        # Tema Oscuro el color puede ser modificado
         ctk.set_appearance_mode("Dark")
         self.configure(fg_color="#050505") 
 
@@ -125,7 +125,7 @@ class AppOCR(ctk.CTk):
         self.lbl_info = ctk.CTkLabel(self, text="Listo para escanear...", text_color="gray")
         self.lbl_info.pack(pady=5)
         
-        # Caja de Texto
+        # Caja de Texto con color estandar
         self.resultado_txt = ctk.CTkTextbox(
             self, 
             width=600, 
